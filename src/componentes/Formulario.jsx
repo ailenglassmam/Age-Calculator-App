@@ -24,16 +24,16 @@ export default function Formulario({ setYears, setMonths, setDays, handleCalcula
     <form onSubmit={handleSubmit}>
       <div className='flex gap-4'>
         <div>
-          <label htmlFor="days" className="block mb-2 text-xs font-bold uppercase text-[#716f6f]">Day</label>
-          <input type="number" name="day" id="day" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#854dff] focus:border-[#854dff] block w-full p-2.5" min="1" max="31" required onChange={handleDays} />
+          <label htmlFor="day" className="block mb-2 text-xs font-bold uppercase text-[#716f6f]">Day</label>
+          <input type="number" name="day" id="day" className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#854dff] focus:border-[#854dff] block w-full p-2.5" min="1" max="31" required placeholder='DD' onChange={handleDays} />
         </div>
         <div>
-          <label htmlFor="months" className="block mb-2 text-xs font-bold uppercase text-[#716f6f]">Month</label>
-          <input type="number" name="month" id="month" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#854dff] focus:border-[#854dff] block w-full p-2.5" min="1" max="12" required onChange={handleMonths} />
+          <label htmlFor="month" className="block mb-2 text-xs font-bold uppercase text-[#716f6f]">Month</label>
+          <input type="number" name="month" id="month" className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#854dff] focus:border-[#854dff] block w-full p-2.5" min="1" max="12" required placeholder='MM' onChange={handleMonths} />
         </div>
         <div>
-          <label htmlFor="years" className="block mb-2 text-xs font-bold uppercase text-[#716f6f]">year</label>
-          <input type="number" name="year" id="year" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#854dff] focus:border-[#854dff] block w-full p-2.5" min="1700" max="2023" required onChange={handleYears} />
+          <label htmlFor="year" className="block mb-2 text-xs font-bold uppercase text-[#716f6f]">year</label>
+          <input type="number" name="year" id="year" className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#854dff] focus:border-[#854dff] block w-full p-2.5" min="1700" max="2023" required placeholder='YY' onChange={handleYears} />
         </div>
       </div>
       <div className='flex my-4 justify-center items-center sm:justify-end'>

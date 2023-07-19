@@ -35,7 +35,7 @@ export default function Calculadora() {
   };
 
   return (
-    <section className="w-full p-4 h-[95vh] bg-[#dbdbdb] sm:p-6 md:p-8 flex justify-center">
+    <section className="w-full p-4 h-[95vh] bg-[#f0f0f0] sm:p-6 md:p-8 flex justify-center">
       <div className="my-auto w-full sm:w-[480px] bg-white p-8 rounded-t-xl rounded-bl-xl rounded-br-[8rem]">
         <Formulario setYears={setYears} setMonths={setMonths} setDays={setDays} handleCalculator={handleCalculator}></Formulario>
         <Resultados years={years} months={months} days={days} ></Resultados>
